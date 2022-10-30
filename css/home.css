@@ -1,1 +1,205 @@
+/* HEADER */
 
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 
+              0px 4px 5px rgba(0, 0, 0, 0.12), 
+              0px 1px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+
+.header-logo{
+    height: 75px;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00003c;
+    text-align: center;
+    font-family: "Roboto Slab";
+}
+
+.header-logo i{
+  font-size: 32px;
+  color: #d4ad68;
+  margin-right: 20px;
+}
+
+.header-logo h1{
+    margin: 0;
+    font-weight: 700;
+}
+
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffcfc; 
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+
+.menu-item a{
+    color: #00003c;
+    font-family: "Roboto Slab";
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-item a:hover{
+    color: #d4ad68;
+    border-bottom: 3px solid #d4ad68;
+}
+
+
+
+
+/* MAIN - BANNER */
+.banner-container{
+    height: calc(100vh - 135px);
+    background: url("../img/banner-1.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Slab";
+}
+
+.banner-text{
+    width: 40%;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.banner-text h2{
+    font-size: 2.5rem;
+}
+
+.banner-button{
+   padding: 15px 40px;
+   border: 1.5px solid #d4ad68;
+   margin-top: 30px;
+}
+
+.banner-button button{
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.banner-button button:hover{
+    color: #d4ad68;
+}
+
+
+
+/* categorias de produtos */
+
+.categories-container{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.category-border{
+    border: 1px solid #d4ac68b1;
+    width: 100%;
+    height: 200px;
+}
+
+.category-item{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: -15px;
+    left: -12px;
+    transition: 0.3s linear;
+}
+
+.item-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s linear;
+    color: white;
+    font-size: 2rem;
+    font-family: "Roboto Slab";
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.item-text:hover{
+    opacity: 0;
+}
+
+.item-1{
+    background: url("../img/categorias/coffee-g0801774a7_640.jpg");
+}
+
+.item-2{
+    background: url("../img/categorias/pexels-alleksana-4051553.jpg");
+}
+
+.item-3{
+    background: url("../img/categorias/pexels-pixabay-158053.jpg");
+}
+
+.item-4{
+    background: url("../img/categorias/pexels-jéshoots-7390.jpg");
+}
+
+.item-5{
+    background: url("../img/categorias/pexels-chan-walrus-1059905.jpg");
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5{
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* SOBRE */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+}
+
+.about-image{
+    border: 1px solid #d4ac68b1;;
+}
+
+.about-image img{
+    height: 450px;
+    position: relative;
+    top: -35px;
+    left: -35px;
+}
+
+.about-text{
+    width:450px;
+    margin-left: 30px;
+}
