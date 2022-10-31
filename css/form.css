@@ -49,13 +49,13 @@ footer {
     justify-content: space-evenly;
 }
 
-.developers {
-    height: 40%;
-    display: flex;    
+.developers-container {
+    display: flex;        
+    gap: 20px;
+    justify-content: center;   
+    /* max-width: 50%; */
+    /* margin: auto; */
     align-items: center;
-    justify-content: space-around;
-    padding-left: 500px;
-    padding-right: 500px;
 }
 
 /* .safra,
