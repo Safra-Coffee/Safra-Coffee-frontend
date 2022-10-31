@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/reset.css">
     <title>Menu</title>
@@ -28,11 +31,317 @@
     </header>
 
     <main>
+        <section class="menu-title">
+            <h1>Menu</h1>
+        </section>
+        
+
+
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-coffee-tab" data-bs-toggle="tab" data-bs-target="#nav-coffee" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Cafés</button>
+
+                <button class="nav-link" id="nav-candy-tab" data-bs-toggle="tab" data-bs-target="#nav-candy" type="button" role="tab" aria-controls="nav-candy" aria-selected="false">Doces</button>
+
+                <button class="nav-link" id="nav-juice-tab" data-bs-toggle="tab" data-bs-target="#nav-juice" type="button" role="tab" aria-controls="nav-juice" aria-selected="false">Sucos</button>
+
+                <button class="nav-link" id="nav-sandwich-tab" data-bs-toggle="tab" data-bs-target="#nav-sandwich" type="button" role="tab" aria-controls="nav-sandwich" aria-selected="false">Lanches</button>
+
+                <button class="nav-link" id="nav-salad-tab" data-bs-toggle="tab" data-bs-target="#nav-salad" type="button" role="tab" aria-controls="nav-salad" aria-selected="false">Saladas</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-coffee" role="tabpanel" aria-labelledby="nav-coffee-tab" tabindex="0">
+                <section class="cardapio">
+                    <div class="cardapio-content">
+                        <table class="table-cardapio">
+                            <tbody>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/categorias/coffee-g0801774a7_640.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/categorias/coffee-g0801774a7_640.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Expresso ou Coado</h6>
+                                        <span class="cardapio-item-price">R$ 5,00</span>
+                                        <p>Café expresso ou coado simples.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/latte.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/latte.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Latte</h6>
+                                        <span class="cardapio-item-price">R$ 16,00</span>
+                                        <p>Café expresso com leite vaporizado e espuma de leite no topo.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/mocha.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/mocha.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Mocha</h6>
+                                        <span class="cardapio-item-price">R$ 18,00</span>
+                                        <p>Café Expresso Com Leite Café expresso com leite vaporizado, chocolate ou caramelo e whip cream.</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-candy" role="tabpanel" aria-labelledby="nav-candy-tab" tabindex="0">
+                <section class="cardapio">
+                    <div class="cardapio-content">
+                        <table class="table-cardapio">
+                            <tbody>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/pudim.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/pudim.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Pudim</h6>
+                                        <span class="cardapio-item-price">R$ 10,00</span>
+                                        <p>Pudim simples.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/torta-de-limao.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/torta-de-limao.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Torta de Limão</h6>
+                                        <span class="cardapio-item-price">R$ 12,00</span>
+                                        <p>Fatia de torta  de limão com calda de chocolate amargo sobre massa de biscoito.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/cocada-ao-forno.jfif')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/cocada-ao-forno.jfif" />
+                                    </td>
+                                    <td>
+                                        <h6>Cocada ao Forno</h6>
+                                        <span class="cardapio-item-price">R$ 14,00</span>
+                                        <p>Cocada elaborada com coco ralado e leite condensado. Dourada no forno.</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-juice" role="tabpanel" aria-labelledby="nav-juice-tab" tabindex="0">
+                <section class="cardapio">
+                    <div class="cardapio-content">
+                        <table class="table-cardapio">
+                            <tbody>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/melancia.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/melancia.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Melancia</h6>
+                                        <span class="cardapio-item-price">R$ 7,00</span>
+                                        <p>300 mL de suco natural de melancia (sem adição de água).</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/laranja.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/laranja.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Laranja</h6>
+                                        <span class="cardapio-item-price">R$ 9,00</span>
+                                        <p>300 mL de suco natural de laranja.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/beterraba-com-cenoura-e-laranja.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/beterraba-com-cenoura-e-laranja.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Beterraba com cenoura e laranja</h6>
+                                        <span class="cardapio-item-price">R$ 12,00</span>
+                                        <p>300 mL de suco de beterraba com cenoura e laranja (fruta) coado.</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-sandwich" role="tabpanel" aria-labelledby="nav-sandwich-tab" tabindex="0">
+                <section class="cardapio">
+                    <div class="cardapio-content">
+                        <table class="table-cardapio">
+                            <tbody>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/pao-de-queijo.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/pao-de-queijo.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Pão de Queijo</h6>
+                                        <span class="cardapio-item-price">R$ 19,00</span>
+                                        <p>Cesta de pães de queijo (6 unidades).</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/sanduiche-caprese.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/sanduiche-caprese.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Caprese na Ciabatta</h6>
+                                        <span class="cardapio-item-price">R$ 22,00</span>
+                                        <p>Pão ciabatta com muçarela de búfala, pesto de manjericão, tomate cereja, rúcula e azeite.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/hamburguer.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/hamburguer.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Hambúrguer</h6>
+                                        <span class="cardapio-item-price">R$ 25,00</span>
+                                        <p>180 g de carne com molho de tomate picante e molho de mostarda no pão australiano. Acompanha batata frita.</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-salad" role="tabpanel" aria-labelledby="nav-salad-tab" tabindex="0">
+                <section class="cardapio">
+                    <div class="cardapio-content">
+                        <table class="table-cardapio">
+                            <tbody>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/categorias/pexels-chan-walrus-1059905.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/categorias/pexels-chan-walrus-1059905.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Salada Simples</h6>
+                                        <span class="cardapio-item-price">R$ 22,00</span>
+                                        <p>Salada simples de alface, rúcula, pepino, tomate, azeitona, cebola roxa, pimentão vermelho e queijo minas em cubos.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/salada-ao-forno.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/salada-ao-forno.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Salada ao Forno</h6>
+                                        <span class="cardapio-item-price">R$ 25,00</span>
+                                        <p>Salada de tomate, abacate e milho no pão folha levada ao forno.</p>
+                                    </td>
+
+                                </tr>
+                                <tr class="cardapio-item" onclick="openItemImageVisualizer('img/produtos/salada-caprese.jpg')">
+                                    <td class="cardapio-item-img">
+                                        <img src="img/produtos/salada-caprese.jpg" />
+                                    </td>
+                                    <td>
+                                        <h6>Salada Caprese</h6>
+                                        <span class="cardapio-item-price">R$ 28,00</span>
+                                        <p>Salada de muçarela de búfala, tomate, manjericão e azeite.</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<section class="cardapio">
+        <div class="cardapio-content">
+            <table class="table-cardapio">
+                <tbody>
+                    <tr class="cardapio-item" onclick="openItemImageVisualizer('img/menu/hamburguer.jpg')">
+                        <td class="cardapio-item-img">
+                            <img src="img/menu/hamburguer.jpg" />
+                        </td>
+                        <td>
+                            <h6>X-Salada</h6>
+                            <span class="cardapio-item-price">R$ 19,99</span>
+                            <p>Hambúrguer gourmet 180gr, alface, tomate, queijo cheddar, maionese, pão com gergelim.</p>
+                        </td>
+
+                    </tr>
+                    <tr class="cardapio-item" onclick="openItemImageVisualizer('img/menu/hamburguer.jpg')">
+                        <td class="cardapio-item-img">
+                            <img src="img/menu/hamburguer.jpg" />
+                        </td>
+                        <td>
+                            <h6>X-Salada</h6>
+                            <span class="cardapio-item-price">R$ 19,99</span>
+                            <p>Hambúrguer gourmet 180gr, alface, tomate, queijo cheddar, maionese, pão com gergelim.</p>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>-->
+
+
+
+
+
+        <br />
+        <br />
+
+
+
+        <section class="item-image-visualizer">
+            <div class="item-image">
+                <button class="btn-close-item-image-visualizer" onclick="closeItemImageVisualizer()">X</button>
+                <img src="" />
+            </div>
+        </section>
     </main>
 
     <footer>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
 </body>
 </html>

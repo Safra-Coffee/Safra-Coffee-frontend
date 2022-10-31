@@ -1,0 +1,120 @@
+.menu-title {
+    text-align: center;
+    background-image: url('../img/pexels-adam-lukac-773958.jpg');
+    background-position-x: center;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu-title h1 {
+    padding: 15px;
+    line-height: 100%;
+}
+
+.cardapio-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.table-cardapio {
+    max-width: 700px;
+}
+
+.table-cardapio th,
+.table-cardapio td {
+    padding: 10px;
+}
+
+.cardapio-item {
+    border-bottom: 0.5px solid rgb(220, 220, 220);
+    padding: 10px;
+    margin: 10px;
+    transition: 0.2s linear;
+}
+
+.cardapio-item h6 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    display: inline;
+}
+
+.cardapio-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cardapio-item-img {
+    text-align: center;
+}
+
+.cardapio-item-img img {
+    max-height: 80px;
+}
+
+.cardapio-item-img:hover {
+}
+
+.cardapio-item-price {
+    font-size: 1rem;
+    font-family: 'Robot Slab', serif;
+    font-weight: bold;
+    color: #d4ad68;
+    min-width: 100px;
+    float: right;
+}
+
+.item-image-visualizer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    min-width: 100%;
+    min-height: 100%;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.item-image {
+    position: relative;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    max-height: 80%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.item-image img {
+    max-width: 80vw;
+    max-height: 80vh;
+    padding: 40px 10px 10px 10px;
+}
+
+.item-image img {
+    opacity: 1.0;
+    transition: 1s linear;
+}
+
+.btn-close-item-image-visualizer {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00003C;
+}
+
+
