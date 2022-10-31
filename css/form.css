@@ -42,26 +42,42 @@ footer {
     background-color: #00003C;
 }
 
-.safra,
+.logos {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.developers {
+    height: 40%;
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+/* .safra,
 .ada,
 .lets-code,
 .developers {
-    /* position: absolute; */
+    position: absolute;
     width: 25%;
     height: 100%;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* .developers {
     flex-direction: row;
 } */
 
-.developers-container {
+/* .developers-container {
     justify-content: flex-start;
-}
+} */
 
 .developers > article {
     color: white;
