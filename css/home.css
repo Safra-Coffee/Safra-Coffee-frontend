@@ -38,16 +38,17 @@ header{
 
 
 nav{
-    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fffcfc; 
+    padding: 20px;
 }
 
 nav ul{
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .menu-item a{
@@ -115,8 +116,6 @@ nav ul{
     display: flex;
     gap: 30px;
     padding: 40px 30px 30px;
-    /* margin-top: 15px; */
-    /* background-color: #ededed; */
 }
 
 .category-border{
@@ -145,10 +144,10 @@ nav ul{
     font-size: 2rem;
     font-family: "Roboto Slab";
     text-transform: capitalize;
-    cursor: pointer;
 }
 
-.item-text:hover{
+
+/* .item-text:hover{
     opacity: 0;
 }
 
@@ -171,7 +170,7 @@ nav ul{
 .item-1, .item-2, .item-3, .item-4, .item-5{
     background-position: center;
     background-size: cover;
-}
+} */
 
 
 
@@ -182,7 +181,7 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 180px 0 0 0;
+    padding: 180px 20px 0 20px;
 }
 
 .about-image{
@@ -190,7 +189,6 @@ nav ul{
 }
 
 .about-image img{
- 
     height: 450px;
     position: relative;
     top: -35px;
@@ -201,6 +199,51 @@ nav ul{
 .about-text{
     width:450px;
     margin-left: 30px;
+}
+
+
+/* SERVIÇOS */
+
+.parallax{
+    padding-top: 200px;
+}
+
+.card-container{
+    background-image: url("../img/pexels-chevanon-photography-324028.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 100px;
+    padding: 0 15px;
+    gap: 50px;
+}
+
+.card-item{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.card-item p{
+    color: #fff;
+}
+
+.card-item h5{
+    color: #d4ad68;
+}
+
+.card-item i{
+    font-size: #fff;
+    color: #fff;
+    font-size: 42px;
 }
 
 
@@ -218,7 +261,7 @@ nav ul{
 .product-container{
    /*  margin-bottom: 100px; */
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .container-fluid{
@@ -285,44 +328,49 @@ nav ul{
 }
 
 
-/* SERVIÇOS */
-.parallax{
-    padding-top: 200px;
+
+@media screen and (max-width: 950px){
+    .banner-text{
+        width: 70%;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about-text{
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .card-container{
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin-bottom: 100px;
+        padding: 0 15px;
+        gap: 50px;
+    }
+
+    .card-item{
+        width: 33%;
+        height: 100%;
+    }
 }
 
-.card-container{
-    background-image: url("../img/pexels-chevanon-photography-324028.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    margin-bottom: 100px;
-    gap: 50px;
-}
 
-.card-item{
-    width: 300px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
+@media screen and (max-width: 700px){
+    .card-container{
+        flex-direction: column;
+        padding: 30px;
+    }
 
-.card-item p{
-    color: #fff;
-}
+    .card-item{
+        width: 75%;
+    }
 
-.card-item h5{
-    color: #d4ad68;
-}
-
-.card-item i{
-    font-size: #fff;
-    color: #fff;
-    font-size: 42px;
+    .parallax{
+        padding-top: 200px;
+    }
 }
