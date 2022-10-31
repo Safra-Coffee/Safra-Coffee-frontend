@@ -208,7 +208,7 @@ nav ul{
 }
 
 .container-fluid{
-    margin-top: 70px;
+    margin: 70px 0 50px 0;
 }
 
 .item-container{
@@ -303,7 +303,6 @@ nav ul{
 
 .newsletter-text p{
     font-size: 1rem;
-    text-transform: lowercase;
 }
 
 .newsletter-form{
