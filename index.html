@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/form.css"/>
     <title>Safra Coffee</title>
 </head>
 
@@ -133,208 +135,297 @@
               <button class="nav-link" id="nav-salad-tab" data-bs-toggle="tab" data-bs-target="#nav-salad" type="button" role="tab" aria-controls="nav-salad" aria-selected="false">Saladas</button>
             </div>
         </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-coffee"role="tabpanel" aria-labelledby="nav-coffee-tab" tabindex="0">
-                <section class="product-container container-fluid">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/categorias/coffee-g0801774a7_640.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Café Expresso</h3>
-                                    <p>Café expresso ou coado simples.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/mocha.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Mocha</h3>
-                                    <p>Café expresso com leite vapotizado, chocolate ou caramelo e whip cream.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                     <img src="./img/produtos/latte.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Latte</h3>
-                                    <p>Café expresso com leite vaporizado e espuma de leite no topo.</p>
-                                </div>
-                            </div>          
-                        </div>                 
+        <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-coffee"role="tabpanel" aria-labelledby="nav-coffee-tab" tabindex="0">
+            <section class="product-container container-fluid">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/categorias/coffee-g0801774a7_640.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Café Expresso</h3>
+                                <p>Café expresso ou coado simples.</p>
+                            </div>
+                        </div>          
                     </div>
-                </section>
-            </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/mocha.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Mocha</h3>
+                                <p>Café expresso com leite vapotizado, chocolate ou caramelo e whip cream.</p>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                    <img src="./img/produtos/latte.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Latte</h3>
+                                <p>Café expresso com leite vaporizado e espuma de leite no topo.</p>
+                            </div>
+                        </div>          
+                    </div>                 
+                </div>
+            </section>
+        </div>
 
-            <div class="tab-pane fade" id="nav-candy" role="tabpanel" aria-labelledby="nav-candy-tab" tabindex="0">
-                <section class="product-container container-fluid">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/pudim.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Pudim de Leite</h3>
-                                    <p>Pudim simples.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/torta-de-limao.jpg" alt="">
-                                </div>
-                                <div class="item-description"> 
-                                    <h3>Torta de Limão</h3>
-                                    <p>Fatia de torta  de limão com calda de chocolate amargo sobre massa de biscoico.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/cocada-ao-forno.jfif" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Cocada ao Forno</h3>
-                                    <p>Cocada elaborada com coco ralado e leite condensado. Dourada no forno.</p>
-                                </div>
-                            </div>          
-                        </div>                        
+        <div class="tab-pane fade" id="nav-candy" role="tabpanel" aria-labelledby="nav-candy-tab" tabindex="0">
+            <section class="product-container container-fluid">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/pudim.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Pudim de Leite</h3>
+                                <p>Pudim simples.</p>
+                            </div>
+                        </div>          
                     </div>
-                </section>
-            </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/torta-de-limao.jpg" alt="">
+                            </div>
+                            <div class="item-description"> 
+                                <h3>Torta de Limão</h3>
+                                <p>Fatia de torta  de limão com calda de chocolate amargo sobre massa de biscoico.</p>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/cocada-ao-forno.jfif" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Cocada ao Forno</h3>
+                                <p>Cocada elaborada com coco ralado e leite condensado. Dourada no forno.</p>
+                            </div>
+                        </div>          
+                    </div>                        
+                </div>
+            </section>
+        </div>
 
-            <div class="tab-pane fade" id="nav-juice" role="tabpanel" aria-labelledby="nav-juice-tab" tabindex="0">
-                <section class="product-container container-fluid">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img"><img src="./img/produtos/beterraba-com-cenoura-e-laranja.jpg" alt=""></div>
-                                <div class="item-description">
-                                    <h3>Mix Especial</h3>
-                                    <p>300 mL de suco de beterraba com cenoura e laranja (fruta) coado.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/laranja.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Laranja</h3>
-                                    <p>300 mL de suco natural de laranja.  </p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/melancia.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Melancia</h3>
-                                    <p>300 mL de suco natural de melancia (sem adição de água).</p>
-                                </div>
-                            </div>          
-                        </div>
+        <div class="tab-pane fade" id="nav-juice" role="tabpanel" aria-labelledby="nav-juice-tab" tabindex="0">
+            <section class="product-container container-fluid">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img"><img src="./img/produtos/beterraba-com-cenoura-e-laranja.jpg" alt=""></div>
+                            <div class="item-description">
+                                <h3>Mix Especial</h3>
+                                <p>300 mL de suco de beterraba com cenoura e laranja (fruta) coado.</p>
+                            </div>
+                        </div>          
                     </div>
-                </section>
-            </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/laranja.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Laranja</h3>
+                                <p>300 mL de suco natural de laranja.  </p>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/melancia.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Melancia</h3>
+                                <p>300 mL de suco natural de melancia (sem adição de água).</p>
+                            </div>
+                        </div>          
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            <div class="tab-pane fade" id="nav-sandwich" role="tabpanel" aria-labelledby="nav-sandwich-tab" tabindex="0">
-                <section class="product-container container-fluid">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/hamburguer.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Hambúrguer</h3>
-                                    <p>180 g de carne com molho de tomate picante e molho de mostarda no pão australiano. Acompanha batata frita.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/sanduiche-caprese.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Caprese na Ciabatta</h3>
-                                    <p>Pão ciabatta com muçarela de búfala, pesto de manjericão, tomate cereja, rúcula e azeite.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/pao-de-queijo.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Pão de queijo</h3>
-                                    <p>Cesta de pães de queijo (6 unidades).</p>
-                                </div>
-                            </div>          
-                        </div>              
+        <div class="tab-pane fade" id="nav-sandwich" role="tabpanel" aria-labelledby="nav-sandwich-tab" tabindex="0">
+            <section class="product-container container-fluid">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/hamburguer.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Hambúrguer</h3>
+                                <p>180 g de carne com molho de tomate picante e molho de mostarda no pão australiano. Acompanha batata frita.</p>
+                            </div>
+                        </div>          
                     </div>
-                </section>
-            </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/sanduiche-caprese.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Caprese na Ciabatta</h3>
+                                <p>Pão ciabatta com muçarela de búfala, pesto de manjericão, tomate cereja, rúcula e azeite.</p>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/pao-de-queijo.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Pão de queijo</h3>
+                                <p>Cesta de pães de queijo (6 unidades).</p>
+                            </div>
+                        </div>          
+                    </div>              
+                </div>
+            </section>
+        </div>
 
-            <div class="tab-pane fade" id="nav-salad" role="tabpanel" aria-labelledby="nav-salad-tab" tabindex="0">
-                <section class="product-container container-fluid">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/salada-ao-forno.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Salada ao Forno</h3>
-                                    <p>Salada de tomate, abacate e milho no pão folha levada ao forno.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                                <div class="item-img">
-                                    <img src="./img/produtos/salada-caprese.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Salada Caprese</h3>
-                                    <p>Salada de muçarela de búfala, tomate, manjericão e azeite.</p>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="col">
-                            <div class="product-item">
-                               <div class="item-img">
-                                    <img src="./img/produtos/pexels-chan-walrus-1059905.jpg" alt="">
-                                </div>
-                                <div class="item-description">
-                                    <h3>Salada Simples</h3>
-                                    <p>Salada simples de alface, rúcula, pepino, tomate, azeitona, cebola roxa, pimentão vermelho e queijo minas em cubos.</p>
-                                </div>
-                            </div>          
-                        </div>  
+        <div class="tab-pane fade" id="nav-salad" role="tabpanel" aria-labelledby="nav-salad-tab" tabindex="0">
+            <section class="product-container container-fluid">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/salada-ao-forno.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Salada ao Forno</h3>
+                                <p>Salada de tomate, abacate e milho no pão folha levada ao forno.</p>
+                            </div>
+                        </div>          
                     </div>
-                </section>
-            </div>
-          </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/salada-caprese.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Salada Caprese</h3>
+                                <p>Salada de muçarela de búfala, tomate, manjericão e azeite.</p>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col">
+                        <div class="product-item">
+                            <div class="item-img">
+                                <img src="./img/produtos/pexels-chan-walrus-1059905.jpg" alt="">
+                            </div>
+                            <div class="item-description">
+                                <h3>Salada Simples</h3>
+                                <p>Salada simples de alface, rúcula, pepino, tomate, azeitona, cebola roxa, pimentão vermelho e queijo minas em cubos.</p>
+                            </div>
+                        </div>          
+                    </div>  
+                </div>
+            </section>
+        </div>
+        </div>
+        
+        <section class="reservation-form">           
+            <form>
+                <h1>
+                    Faça sua reserva
+                </h1>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Nome</label>
+                        <input type="text" class="form-control" id="inputName" required placeholder="Nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSurname">Sobrenome</label>
+                        <input type="text" class="form-control" id="inputSurname" required placeholder="Sobrenome">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail" required placeholder="seu@email.com">
+                </div>              
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputDate">Data</label>
+                        <input type="date" class="form-control" id="inputDate" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputTime">Horário</label>
+                        <select type="time" class="form-control" id="inputTime" required>
+                            <option>18:00</option>
+                            <option>19:00</option>
+                            <option>20:00</option>
+                            <option>21:00</option>
+                            <option>22:00</option>
+                        </select>                      
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputNumberOfPeople">Pessoas</label>
+                        <select class="form-control" id="inputNumberOfPeople" required>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        </select>                                      
+                    </div>                  
+                </div>
+                <button type="submit" class="btn btn-primary">Fazer reserva</button>
+            </form>
+        </section>  
     </main>
 
     <footer>
+        <section class="safra">
+            <a href="https://www.safra.com.br/">
+              <img src="https://www.safra.com.br/lumis-theme/br/com/bancosafra/safranet/theme/safranet/assets/img/logo-safra-branco.svg"
+              width="95">        
+            </a>    
+          </section> 
+      
+          <section class="ada">
+            <a href="https://ada.tech/">
+              <img src="https://lc-public-assets.s3.sa-east-1.amazonaws.com/images/manifesto-ada/logo.svg"
+              width="65">
+            </a>           
+          </section> 
+      
+          <section class="lets-code">
+            <a href="https://letscode.com.br/">
+              <img src="https://lc-public-assets.s3.sa-east-1.amazonaws.com/images/Header/letsCodeLogo.svg"
+              width="125">
+            </a>           
+          </section> 
+          
+          <section class="developers">
+            <div class="developers-container">
+              <article>
+                <a href="https://letscode.com.br/">
+                  <img src="./img/linkedin-6-512.png" width="15"> Dâmares
+                </a>
+              </article>
+              <article>
+                <a href="https://letscode.com.br/">
+                  <img src="./img/linkedin-6-512.png" width="15"> Daniel
+                </a>
+              </article>
+              <article>
+                <a href="https://www.linkedin.com/in/isabellassnt/">
+                  <img src="./img/linkedin-6-512.png" width="15"> Isabella S.
+                </a>
+              </article>
+            </div>            
+          </section> 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
