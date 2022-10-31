@@ -20,15 +20,16 @@
         <nav>
             <ul>
                 <li class="menu-item"><a href="menu.html">Menu</a></li>
-                <li class="menu-item"><a href="#">Sobre</a></li>
-                <li class="menu-item"><a href="#">Contato</a></li>
+                <li class="menu-item"><a href="#about">Sobre</a></li>
+                <li class="menu-item"><a href="#servicos">Serviços</a></li>
+                <li class="menu-item"><a href="#products">Especialidades</a></li>
                 <li class="menu-item"><a href="#">Reserva</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- banner -->
+        <!-- BANNER -->
         <section class="banner-container">
             <div class="banner-text">
                 <h2>Lorem ems </h2>
@@ -38,61 +39,300 @@
                 <button type="button">Fazer reserva</button>
             </div>
         </section>
+
         <!-- categorias -->
-        <section class="categories-container">
+        <!-- <section class="categories-container">
             <div class="category-border">
                 <div class="category-item item-1">
-                    <div class="item-text">
-                        <p>cafés</p>
-                    </div>
+                    <a href="#servicos">
+                        <div class="item-text">
+                            <p>serviços</p>
+                        </div>
+                    </a>
                 </div>
             </div>
            
             <div class="category-border">
-                <div class="category-item item-2">
-                    <div class="item-text">
-                        <p>doces</p>
+                <a href="#nav-tab">
+                    <div class="category-item item-2">
+                        <div class="item-text">
+                            <p>especialidades</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         
             <div class="category-border">
-                <div class="category-item item-3">
-                    <div class="item-text">
-                        <p>sucos</p>
+                <a href="#">
+                    <div class="category-item item-3">
+                        <div class="item-text">
+                            <p>nosso espaço</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="category-border">
-                <div class="category-item item-4">
-                    <div class="item-text">
-                        <p>lanches</p>
+                <a href="#">
+                    <div class="category-item item-4">
+                        <div class="item-text">
+                            <p>promoções</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-  
-            <div class="category-border">
-                <div class="category-item item-5">
-                    <div class="item-text">
-                    <p>saladas</p>
-                    </div>
-                </div> 
-            </div>
-        </section>
-        <!-- sobre nós -->
-        <section class="about">
+        </section> -->
+
+        <!-- SOBRE NÓS -->
+        <section class="about" id="about">
             <div class="about-image">
                 <img src="./img/pexels-chevanon-photography-312418.jpg" alt="">
             </div>
             <div class="about-text">
                 <h2>Nossa história</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo veritatis quas accusamus velit voluptate beatae molestiae? Vitae harum repudiandae reprehenderit eligendi. Tempore debitis fuga rem nulla. Pariatur corporis quisquam veniam.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo veritatis quas accusamus velitvoluptate beatae molestiae? Vitae harum repudiandae reprehenderit eligendi. Tempore debitis fugarem nulla. Pariatur corporis quisquam veniam.</p>
             </div>
         </section>
 
-    </main>
+      
+        <!-- SERVICOS -->
+        <section class="parallax" id="servicos">
+            <div class="card-container">
+                <div class="card-item">
+                    <i class="bi bi-wifi"></i>
+                    <h5>Wi-fi</h5>
+                    <p>Contamos com acesso wi-fi gratuito para que você possa fazer chamadas e reuniões remotas com qualidade e segurança.</p>
+                </div>
+                <div class="card-item">
+                    <i class="bi bi-laptop"></i>
+                    <h5>Laptop</h5>
+                    <p>Disponibilizamos laptops públicos com acesso a internet e serviços de streaming e jogos para seu momento de descanso.</p>
+                </div>
+                <div class="card-item">
+                    <i class="bi bi-people"></i>
+                    <h5>Reserva reunião</h5>
+                    <p>Reserve um horário para realizar suas reuniões de negócios em um ambiente agradável e acolhedor. Oferecemos ainda a possibilidade de reserva de menu.</p>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- PRODUTOS -->
+        <div class="section-title" id="products">
+            <h2>Nossas Especialidades</h2>
+        </div>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-coffee-tab" data-bs-toggle="tab" data-bs-target="#nav-coffee" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Cafés</button>
 
+              <button class="nav-link" id="nav-candy-tab" data-bs-toggle="tab" data-bs-target="#nav-candy" type="button" role="tab" aria-controls="nav-candy" aria-selected="false">Doces</button>
+
+              <button class="nav-link" id="nav-juice-tab" data-bs-toggle="tab" data-bs-target="#nav-juice" type="button" role="tab" aria-controls="nav-juice" aria-selected="false">Sucos</button>
+
+              <button class="nav-link" id="nav-sandwich-tab" data-bs-toggle="tab" data-bs-target="#nav-sandwich" type="button" role="tab" aria-controls="nav-sandwich" aria-selected="false">Lanches</button>
+
+              <button class="nav-link" id="nav-salad-tab" data-bs-toggle="tab" data-bs-target="#nav-salad" type="button" role="tab" aria-controls="nav-salad" aria-selected="false">Saladas</button>
+            </div>
+        </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-coffee"role="tabpanel" aria-labelledby="nav-coffee-tab" tabindex="0">
+                <section class="product-container container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/categorias/coffee-g0801774a7_640.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Café Expresso</h3>
+                                    <p>Café expresso ou coado simples.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/mocha.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Mocha</h3>
+                                    <p>Café expresso com leite vapotizado, chocolate ou caramelo e whip cream.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                     <img src="./img/produtos/latte.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Latte</h3>
+                                    <p>Café expresso com leite vaporizado e espuma de leite no topo.</p>
+                                </div>
+                            </div>          
+                        </div>                 
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-candy" role="tabpanel" aria-labelledby="nav-candy-tab" tabindex="0">
+                <section class="product-container container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/pudim.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Pudim de Leite</h3>
+                                    <p>Pudim simples.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/torta-de-limao.jpg" alt="">
+                                </div>
+                                <div class="item-description"> 
+                                    <h3>Torta de Limão</h3>
+                                    <p>Fatia de torta  de limão com calda de chocolate amargo sobre massa de biscoico.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/cocada-ao-forno.jfif" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Cocada ao Forno</h3>
+                                    <p>Cocada elaborada com coco ralado e leite condensado. Dourada no forno.</p>
+                                </div>
+                            </div>          
+                        </div>                        
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-juice" role="tabpanel" aria-labelledby="nav-juice-tab" tabindex="0">
+                <section class="product-container container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img"><img src="./img/produtos/beterraba-com-cenoura-e-laranja.jpg" alt=""></div>
+                                <div class="item-description">
+                                    <h3>Mix Especial</h3>
+                                    <p>300 mL de suco de beterraba com cenoura e laranja (fruta) coado.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/laranja.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Laranja</h3>
+                                    <p>300 mL de suco natural de laranja.  </p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/melancia.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Melancia</h3>
+                                    <p>300 mL de suco natural de melancia (sem adição de água).</p>
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-sandwich" role="tabpanel" aria-labelledby="nav-sandwich-tab" tabindex="0">
+                <section class="product-container container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/hamburguer.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Hambúrguer</h3>
+                                    <p>180 g de carne com molho de tomate picante e molho de mostarda no pão australiano. Acompanha batata frita.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/sanduiche-caprese.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Caprese na Ciabatta</h3>
+                                    <p>Pão ciabatta com muçarela de búfala, pesto de manjericão, tomate cereja, rúcula e azeite.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/pao-de-queijo.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Pão de queijo</h3>
+                                    <p>Cesta de pães de queijo (6 unidades).</p>
+                                </div>
+                            </div>          
+                        </div>              
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="nav-salad" role="tabpanel" aria-labelledby="nav-salad-tab" tabindex="0">
+                <section class="product-container container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 item-container"> 
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/salada-ao-forno.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Salada ao Forno</h3>
+                                    <p>Salada de tomate, abacate e milho no pão folha levada ao forno.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <img src="./img/produtos/salada-caprese.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Salada Caprese</h3>
+                                    <p>Salada de muçarela de búfala, tomate, manjericão e azeite.</p>
+                                </div>
+                            </div>          
+                        </div>
+                        <div class="col">
+                            <div class="product-item">
+                               <div class="item-img">
+                                    <img src="./img/produtos/pexels-chan-walrus-1059905.jpg" alt="">
+                                </div>
+                                <div class="item-description">
+                                    <h3>Salada Simples</h3>
+                                    <p>Salada simples de alface, rúcula, pepino, tomate, azeitona, cebola roxa, pimentão vermelho e queijo minas em cubos.</p>
+                                </div>
+                            </div>          
+                        </div>  
+                    </div>
+                </section>
+            </div>
+          </div>
+    </main>
 
     <footer>
     </footer>
