@@ -1,12 +1,10 @@
 /* HEADER */
-
 header{
     width: 100%;
     position: sticky;
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 
               0px 4px 5px rgba(0, 0, 0, 0.12), 
               0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -16,12 +14,12 @@ header{
 
 .header-logo{
     height: 75px;
-    background-color: #ededed;
+    /* background-color: #ededed; */
+    background-color: #e9ecef;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #00003c;
-    text-align: center;
+    color: #00003c;   
     font-family: "Roboto Slab";
 }
 
@@ -38,7 +36,7 @@ header{
 
 
 nav{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     background-color: #fffcfc; 
@@ -48,6 +46,7 @@ nav{
 nav ul{
     display: flex;
     gap: 50px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -58,6 +57,7 @@ nav ul{
     font-size: 18px;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
+    letter-spacing: .05em; 
 }
 
 .menu-item a:hover{
@@ -67,8 +67,8 @@ nav ul{
 
 
 
-
 /* MAIN - BANNER */
+
 .banner-container{
     height: calc(100vh - 135px);
     background: url("../img/banner-1.jpg");
@@ -110,69 +110,6 @@ nav ul{
 }
 
 
-/* categorias de produtos */
-
-.categories-container{
-    display: flex;
-    gap: 30px;
-    padding: 40px 30px 30px;
-}
-
-.category-border{
-    border: 1.5px solid #d4ac68b1;
-    width: 100%;
-    height: 200px;
-}
-
-.category-item{
-    width: 100%;
-    height: 200px;
-    position: relative;
-    top: -15px;
-    left: -12px;
-    transition: 0.3s linear;
-}
-
-.item-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.3s linear;
-    color: white;
-    font-size: 2rem;
-    font-family: "Roboto Slab";
-    text-transform: capitalize;
-}
-
-
-/* .item-text:hover{
-    opacity: 0;
-}
-
-.item-1{
-    background: url("../img/categorias/istockphoto-1212785846-170667a.jpg");
-}
-
-.item-2{
-    background: url("../img/categorias/pexels-alleksana-4051553.jpg");
-}
-
-.item-3{
-    background: url("../img/categorias/pexels-lisa-fotios-1024359.jpg");
-}
-
-.item-4{
-    background: url("../img/categorias/coffee-g0801774a7_640.jpg");
-}
-
-.item-1, .item-2, .item-3, .item-4, .item-5{
-    background-position: center;
-    background-size: cover;
-} */
-
-
 
 /* SOBRE */
 
@@ -199,6 +136,12 @@ nav ul{
 .about-text{
     width:450px;
     margin-left: 30px;
+    color: #4f4f4f;
+    font-family: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",serif;
+}
+
+.about-text h2{
+    color:#d4ad68;
 }
 
 
@@ -251,12 +194,12 @@ nav ul{
 
 .section-title h2{
     text-align: center;
-    font-family: "Roboto Slab";
+    /* font-family: "Roboto Slab"; */
+    font-family: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",serif;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 500;
     color: #d4ad68; 
 }
-
 
 .product-container{
    /*  margin-bottom: 100px; */
@@ -297,10 +240,16 @@ nav ul{
     justify-content: space-between;
     text-align: center;
     margin-top: 10px;
+    font-family: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",serif;
+    text-transform: capitalize;
+}
+
+.item-description p{
+    color: #4f4f4f;
 }
 
 .item-description h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-link{
@@ -325,6 +274,89 @@ nav ul{
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     border-color: none !important;
+}
+
+
+/* newsletter */
+
+.newsletter-container{
+    width: 100%;
+    min-height: 350px;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-text{
+    width: 40%;
+    color: #4f4f4f;
+    font-family: "Roboto Slab",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",serif;
+}
+
+.newsletter-text h2{
+    text-transform: capitalize;
+    font-family: "Roboto Slab";
+}
+
+.newsletter-text p{
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+
+.newsletter-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-form form{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.input-email{
+    width: 100%;
+}
+
+.newsletter-form input{
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+::placeholder{
+    color: rgb(194, 190, 190);
+}
+
+.newsletter-form button{
+    height: 50px;
+    width: 100%;
+    padding: 16px 32px;
+    color: #fff;
+    background-color: #d4ad68;
+    border: 1px solid #d4ad68;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+.newsletter-form button:hover{
+    color: #fff;
+    border: 1px solid #00003c;
+    background-color: #00003c;
 }
 
 
@@ -357,6 +389,14 @@ nav ul{
         width: 33%;
         height: 100%;
     }
+
+    .newsletter-form form{
+        width: 70%;
+    }
+
+    .newsletter-text{
+        width: 60%;
+    }
 }
 
 
@@ -372,5 +412,20 @@ nav ul{
 
     .parallax{
         padding-top: 200px;
+    }
+}
+
+
+@media screen and (max-width: 570px){
+
+    .newsletter-form form{
+        flex-direction: column;
+    }
+
+    .newsletter-form form{
+        width: 90%;
+    }
+    .newsletter-text{
+        width: 80%;
     }
 }
