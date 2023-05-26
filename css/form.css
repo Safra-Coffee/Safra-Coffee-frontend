@@ -29,6 +29,9 @@ footer {
     width: 100%;
     margin-top: auto;
     background-color: #00003C;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
     /* position: fixed;
     bottom: 0; */
 }
@@ -43,41 +46,28 @@ footer {
 }
 
 .logos {
-    height: 60%;
+    /* height: 60%; */
+    width: 75%;/* dbs */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.developers-container {
-    display: flex;        
-    gap: 20px;
-    justify-content: center;   
-    /* max-width: 50%; */
-    /* margin: auto; */
-    align-items: center;
+.contact{
+    width: 25%;
+    display: flex;
+    justify-content: center
 }
 
-/* .safra,
-.ada,
-.lets-code,
-.developers {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .developers {
-    flex-direction: row;
-} */
-
-/* .developers-container {
-    justify-content: flex-start;
-} */
+.developers-container {
+    display: flex; 
+    flex-direction: column;     
+    /* gap: 20px; */
+    justify-content: space-between;  
+   /*  max-width: 50%; */
+    /* margin: auto; */
+  /*  align-items: center; */
+}
 
 .developers > article {
     color: white;
@@ -88,15 +78,23 @@ footer {
     text-decoration: none;
 }
 
-/* font-family: "Roboto Slab"; */
-/* #d4ad68 */
 
-/* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 
-               0px 4px 5px rgba(0, 0, 0, 0.12), 
-               0px 1px 10px rgba(0, 0, 0, 0.2);
-*/
+@media screen and (max-width: 768px){
 
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
+    footer {        
+        flex-direction: column;
+    }
+    
+    .logos {
+        width: 100%;
+    }
+    
+    .contact{
+        width: 100%;
+    }
+
+    .developers-container {
+        flex-direction: row;     
+        gap: 20px;
+    }
+}
